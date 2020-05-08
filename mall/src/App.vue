@@ -7,12 +7,24 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
+import jsonp from 'jsonp'
 export default {
   name: 'App',
+  data() {
+    return {
+      data:''
+    }
+  },
   components: {
     HelloWorld
-  }
+  },
+  mounted() {
+    let url='https://www.imooc.com/common/adver-getadverlistbymarking?marking=global_newcomer'
+  jsonp(url,(err,res)=>{
+    let result=res;
+    this.data=result
+  })
+  },
 }
 </script>
 
