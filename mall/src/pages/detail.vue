@@ -1,13 +1,11 @@
 <template>
     <div>
-        <nav-header></nav-header>
-        <router-view></router-view>
-        <nav-footer></nav-footer>
+        detail
     </div>
 </template>
 <script>
 export default {
-    
+    name:'detail'
 }
 </script>
 <style lang="stylus">
