@@ -5,16 +5,20 @@
 </template>
 
 <script>
-import storage from './storage/index'
 export default {
   name: 'App',
+  data() {
+    return {
+      res:{}
+    }
+  },
   components: {
   },
   mounted() {
-    // storage.setItem('a',1)
-    // storage.setItem('user',{'a':1})
-    // storage.setItem('abc',{'a':1},'user')
-    storage.clear('a','user')
+    //本地加载请求json文件
+    this.axios.get('/mock/user/login.json').then((res)=>{
+      this.res=res
+    })
   },
 }
 </script>
