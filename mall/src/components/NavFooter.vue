@@ -1,6 +1,8 @@
 <template>
     <div>
-        nav-footer
+        <div class="footer">
+            
+        </div>
     </div>
 </template>
 <script>
