@@ -21,6 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang='scss'>
 @import './assets/sass/reset.scss';
+@import './assets/sass/button.scss';
 </style>

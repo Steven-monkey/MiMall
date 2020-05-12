@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import VueLazyload from 'vue-lazyload'
+import VueCookie from 'vue-cookie'
 // import env from './env'
 
 //设置一个mock的开关
@@ -27,6 +29,10 @@ axios.interceptors.response.use(function(response){
   }
 })
 Vue.use(VueAxios,axios)
+Vue.use(VueCookie)
+Vue.use(VueLazyload,{
+  loading:'/imgs/loading-svg/loading-bars.svg'
+})
 //生产环境的提示
 Vue.config.productionTip = false
 
