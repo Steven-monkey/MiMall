@@ -6,43 +6,133 @@
                     <ul class="menu-wrap">
                         <li class="menu-item">
                             <a href="javascript:;">手机 电话卡</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">电视 盒子</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">笔记本 显示器 平板</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">家电 插线板</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">出行 穿戴</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">智能 路由器</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">电源 配件</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">健康 儿童</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">耳机 音响</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li class="menu-item">
                             <a href="javascript:;">生活 箱包</a>
-                            <div class="children"></div>
+                            <div class="children">
+                                <ul v-for="(item, index) in menuList" :key="index">
+                                    <li v-for="(sub, index) in item" :key="index">
+                                        <a v-bind:href="sub ? '/#/product/'+sub.id : ''">
+                                            <img :src="sub ? sub.img : '/imgs/item-box-1.png'">
+                                            {{sub.name ||'小米9'}}
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -114,7 +204,26 @@ export default {
                     id:'42',
                     img:'/imgs/slider/slide-5.jpg'
                 }
-            ]
+            ],
+            menuList:[
+               [{
+                    id:30,
+                    img:'/imgs/item-box-1.png',
+                    name:"小米CC9",
+                },{
+                    id:31,
+                    img:'/imgs/item-box-2.png',
+                    name:"小米8青春版",
+                },{
+                    id:32,
+                    img:'/imgs/item-box-3.jpg',
+                    name:"Redmi K20 Pro",
+                },{
+                    id:33,
+                    img:'/imgs/item-box-4.jpg',
+                    name:"移动4G专区",
+                }],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]
+            ],
         }
     },
 }
@@ -149,8 +258,41 @@ export default {
                         content: '';
                         @include bgImg(10px,15px,'/imgs/icon-arrow.png')
                     }
+                }
                     &:hover{
                         background-color: $colorA;
+                        .children{
+                            display: block;
+                        }
+                    }
+                .children{
+                    display: none;
+                    width: 962px;
+                    height: 451px;
+                    background-color: $colorG;
+                    position: absolute;             
+                    top: 0;
+                    left: 264px;
+                    border: 1px solid $colorH;
+                    ul{
+                        display: flex;
+                        justify-content: space-between;
+                        height: 75px;
+                        li{
+                            height: 75px;
+                            line-height: 75px;
+                            flex: 1;
+                            padding-left: 23px;
+                        }
+                        a{
+                            color:$colorB;
+                        }
+                        img{
+                            width: 42px;
+                            height: 35px;
+                            vertical-align: middle;
+                            margin-right: 15px;
+                        }
                     }
                 }
             }
