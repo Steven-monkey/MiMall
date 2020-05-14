@@ -22,6 +22,8 @@
     "@vue/cli-service": "~4.3.0",
     "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "element-ui": "^2.13.1",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "lazyload": "^2.0.0-rc.2",
