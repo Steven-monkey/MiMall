@@ -11,5 +11,12 @@ module.exports={
                 }
             }
         }
+    },
+    //设置成false(默认就是true),别人看不到我们的源码
+    //这里设置成false是开启不让别人看我们代码的功能
+    productionSourceMap:false,
+    //删除预加载，防止他们全部加载
+    chainWebpack:config=>{
+        config.plugins.delete('prefetch');
     }
 }

@@ -50,15 +50,18 @@
                 </div>
             </div>
         </div>
+        <service-bar></service-bar>
         <nav-footer></nav-footer>
     </div>
 </template>
 <script>
 import OrderHeader from './../components/OrderHeader'
 import NavFooter from './../components/NavFooter'
+import ServiceBar from './../components/ServiceBar'
 import { Message } from 'element-ui'
 export default {
     components:{
+        ServiceBar,
         OrderHeader,
         NavFooter
     },
