@@ -150,7 +150,7 @@
     </modal>
     <modal
       title="删除确认"
-      btnType="1"
+      btnType='3'
       :showModal="showDelModal"
       @cancel="showDelModal=false"
       @submit="submitAddress"
